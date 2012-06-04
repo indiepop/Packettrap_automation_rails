@@ -1,0 +1,3 @@
+default: {username: 'admin', password: 'password'}
+server : 'http://zhu13589/'
+browser: 'ff'
