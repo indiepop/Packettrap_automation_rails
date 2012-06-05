@@ -16,7 +16,8 @@ module WCF
             when :text
               super("//*[text()='#{what}']")
             when :find
-              super("//*[@id=//label[text()='#{what}']/@for]]")
+             # super("//*[@id=//label[text()='#{what}']/@for]]")
+             super("//input[@id='MainContent_#{what}']")
             else
               raise "Don't know how to init DwrElement by '#{how}' with '#{what}'"
           end
